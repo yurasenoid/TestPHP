@@ -1,14 +1,14 @@
 <?php
 $phi = 22 / 7;
-$r = 20;
-$t = 10;
+$r = 7;
+$t = 5;
 $luasTabung = ($phi * $r * $r * $t);
 
 function displayData() {
     global $phi, $r, $t;
     echo "CALCULATOR TABUNG <br>";
     echo "<br>";
-    echo "phi: $phi<br>";
+    echo "phi: 22/7 <br>";
     echo "r: $r<br>";
     echo "t: $t<br>";
 }
@@ -31,4 +31,5 @@ function kondisi() {
 
 displayData();
 luasTabung();
+kondisi()
 ?>
