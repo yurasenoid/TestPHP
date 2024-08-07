@@ -14,22 +14,15 @@ function displayData() {
 }
 
 function luasTabung() {
-    global $phi, $r, $t, $luasTabung;
-    echo "Luas Tabung:" . number_format($luasTabung, 2). "<br>";
-}
-
-function kondisi() {
     global $luasTabung;
-    if($luasTabung > 100) {
-        echo "Luas tabung lebih dari 100 <br>";
-    }
-    
-    else {
-        echo "Luas tabung kurang dari 100";
+    $decimal = $luasTabung - floor($luasTabung);
+    if ($decimal == 0) {
+        echo "Luas Tabung: " . floor($luasTabung) . "<br>";
+    } else {
+        echo "Luas Tabung: " . number_format($luasTabung, 1) . "<br>";
     }
 }
 
 displayData();
 luasTabung();
-kondisi()
 ?>
